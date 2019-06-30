@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Legal Orgs Refferals</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="header">
+        <h2>LEGAL ORG REFERRALS</h2>
+    </div>
+    
+    <div class="container">
+        <h2>Income Level?</h2>
+        <ul>
+            <li>
+                <input type="radio" id="income-less-than-40k" name="income">
+                <label for="income-less-than-40k">Less than $40,000/year</label>
+                <div class="radio-button"></div>
+            </li>
+            <li>
+                <input type="radio" id="income-40k-to-100k" name="income">
+                <label for="income-40k-to-100k">$40,000/year to $100,000/year</label>
+                <div class="radio-button"></div>
+            </li>
+            <li>
+                <input type="radio" id="income-greater-than-100k" name="income">
+                <label for="income-greater-than-100k">More than $100,000</label>
+                <div class="radio-button"></div>
+            </li>
+            <li>
+                <input type="radio" id="income-prefer-not-to-state" name="income">
+                <label for="income-prefer-not-to-state">Prefer not to state</label>
+                <div class="radio-button"></div>
+            </li>
+        </ul>
+        <div class="navigation">
+            <button class="button button-previous" onclick="window.location.href='choose-issue.html';">&lsaquo; Issue?</button>
+            <button class="button button-next" onclick="window.location.href='referrals.html';">Referrals &rsaquo;</button>
+        </div>    
+    </div>
+</body>
+</html>

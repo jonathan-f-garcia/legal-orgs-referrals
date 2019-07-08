@@ -1,2 +1,7 @@
 # Visual Studio Code Workspaces
 *.code-workspace
+
+# Terraform-related directories & files
+.terraform
+*.tfstate
+*.backup

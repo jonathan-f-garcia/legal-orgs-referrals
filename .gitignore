@@ -5,3 +5,6 @@
 .terraform
 *.tfstate
 *.backup
+
+# Apple-related files
+*DS_Store*

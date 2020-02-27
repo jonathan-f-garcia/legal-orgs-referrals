@@ -1,0 +1,290 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Serif&display=swap');
+
+body, html {
+  height: 100%;
+  background: #f1f1f1;
+  font-family: 'Noto Serif', serif;
+}
+
+.header {
+  box-sizing: border-box;
+  background-color: #003A63;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 8em;
+  z-index: 300;
+  padding: 0 0 0 0;
+  margin: 0 0 0 0;
+  color: #f1f1f1;
+  text-align: center;
+}
+
+.header h2 {
+  font-size: 3em;
+  color: #f1f1f1;
+  margin-top: 0 0 0 0;
+}
+
+.container {
+  display: block;
+  position: relative;
+  top: 8em;
+  margin: auto;
+  height: auto;
+  width: 40em;
+}
+
+.container h2 {
+  font-size: 2em;
+  color: #003a63;
+  margin-top: 0 0 0 0;
+}
+
+.container h3 {
+  font-size: 1.5fem;
+  color: #003a63;
+  margin-top: 0 0 0 0;
+}
+
+.container ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  overflow: auto;
+}
+.navigation {
+  height: 3em;
+  width: 90%;
+}
+
+.button {
+  margin: 0.25em auto;
+  font-size: 1em;
+  font-family: 'Noto Serif', serif;
+  border: none;
+  background: #003a63;
+  border-radius: 0.5em;
+  width: 7em;
+  text-align: center;
+  color: #f1f1f1;
+}
+
+.button:focus {
+  outline: none;
+}
+
+.button:hover {
+  background: #2a6ebb;
+}
+
+.button-previous {
+  float: left;
+}
+
+.button-next {
+  float: right;
+}
+
+ul li {
+  color: #5f6062;
+  display: block;
+  position: relative;
+  float: left;
+  width: 90%;
+  height: 5em;
+  border-bottom: 1px solid #5f6062;
+}
+
+ul li label {
+  display: block;
+  position: relative;
+  font-size: 1.5em;
+  margin: auto;
+  height: 1.5em;
+  top: 1.0em;
+  left: 2em;
+  z-index: 9;
+  cursor: pointer;
+  -webkit-transition: all 0.25s linear;
+}
+
+/* Radio Button Styles */
+ul li input[type=radio]{
+  position: absolute;
+  visibility: hidden;
+}
+
+ul li .radio-button {
+  display: block;
+  position: absolute;
+  border: 0.25em solid #5f6062;
+  border-radius: 100%;
+  height: 1.5em;
+  width: 1.5em;
+  top: 1.5em;
+  left: 0em;
+  z-index: 5;
+  transition: border .25s linear;
+  -webkit-transition: border .25s linear;
+}
+
+ul li .radio-button::before {
+  display: block;
+  position: relative;
+  content: '';
+  border-radius: 100%;
+  height: 1em;
+  width: 1em;
+  top: 0.25em;
+  left: 0;
+  margin: auto;
+  padding: 0 0 0 0;
+  transition: background 0.25s linear;
+  -webkit-transition: background 0.25s linear;
+}
+
+input[type=radio]:checked ~ .radio-button {
+  border: 0.25em solid #2a6ebb;
+}
+
+input[type=radio]:checked ~ .radio-button::before {
+  background: #2a6ebb;
+}
+
+input[type=radio]:checked ~ label {
+  color: #2a6ebb;
+}
+
+/* Checkbox Styles */ /*
+ul li input[type=checkbox]{
+  position: absolute;
+  visibility: hidden;
+}
+
+ul li .checkmark {
+  display: block;
+  position: absolute;
+  border: 0.25em solid #5f6062;
+  height: 1.5em;
+  width: 1.5em;
+  top: 1.5em;
+  left: 0em;
+  z-index: 5;
+  transition: border .25s linear;
+  -webkit-transition: border .25s linear;
+}
+
+ul li .checkmark::before {
+  display: block;
+  position: relative;
+  content: '';
+  height: 1em;
+  width: 1em;
+  top: 0.25em;
+  left: 0;
+  margin: auto;
+  padding: 0 0 0 0;
+  transition: background 0.25s linear;
+  -webkit-transition: background 0.25s linear;
+}
+
+input[type=checkbox]:not(:checked) ~ .checkmark {
+  border: 0.25em solid #5f6062;
+}
+
+input[type=checkbox]:not(:checked) ~ .checkmark::before {
+  display: none;
+}
+
+input[type=checkbox]:not(:checked) ~ label {
+  color: #5f6062;
+}
+
+input[type=checkbox]:checked ~ .checkmark {
+  border: 0.25em solid #2a6ebb;
+}
+
+input[type=checkbox]:checked ~ .checkmark::before {
+  background: #2a6ebb;
+}
+
+input[type=checkbox]:checked ~ label {
+  color: #2a6ebb;
+}
+*/
+/* Business Address Styles */
+.legal-org {
+  height: 9em;
+  border-bottom: 1px solid #5f6062;
+}
+
+ul li .legal-org-title {
+  font-size: 1.25em;
+  color: #003a63;
+}
+
+ul li .legal-org-issues {
+  float: right;
+  width: 60%;
+}
+
+.legal-org-issue {
+  position: relative;
+  height: 1em;
+  width: 1em;
+  margin: 0.25em 0.05em;
+  border-radius: 100%;
+  float: right;
+}
+
+.issue-fair-housing {
+  background: #2a6ebb;
+}
+
+.issue-misdemeanor {
+  background: #9c3022;
+}
+
+.issue-immigration {
+  background: #ea7125;
+}
+
+.issue-domestic-violence {
+  background: #5c3160;
+}
+
+.legal-org-issue .legal-org-issue-text {
+  visibility: hidden;
+  width: 7em;
+  color: #f1f1f1;
+  text-align: center;
+  border-radius: 0.5em;
+  padding: 0.1em;
+  position: absolute;
+  z-index: 1;
+  top: -0.25em;
+  right: 110%;
+}
+
+.legal-org-issue:hover .legal-org-issue-text {
+  visibility: visible;
+}
+
+.legal-org-phone::before {
+  content: "P: ";
+}
+
+.legal-org-fax::before {
+  content: "F: ";
+}
+
+ul li .legal-org-info {
+  float: left;
+  width: 40%;
+}
+
+ul li address {
+  font-style: normal;
+}

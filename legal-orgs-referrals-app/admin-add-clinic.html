@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Legal Orgs Refferals</title>
+    <link rel="stylesheet" href="admin-styles.css">
+</head>
+<body>
+    <div class="header">
+        <h2>LEGAL ORG REFERRALS</h2>
+    </div>
+    
+    <div class="container">
+        <h2>Add a New Clinic</h2>
+        <form>
+            <h3>Contact Information</h3>
+            <label for="clinic-name">Clinic Name:</label>
+            <input type="text" id="clinic-name" name="clinic-name" value=""><br>
+            <label for="address-line1">Address (Line 1):</label>
+            <input type="text" id="address-line1" name="address-line1" value=""><br>
+            <label for="address-line2">Address (Line 2):</label>
+            <input type="text" id="address-line2" name="address-line2" value=""><br>
+            <label for="phone-primary">Primary Phone:</label>
+            <input type="text" id="phone-primary" name="phone-primary" value=""><br>
+            <label for="phone-secondary">Secondary Phone:</label>
+            <input type="text" id="phone-secondary" name="phone-secondary" value=""><br>
+            <label for="website">Website:</label>
+            <input type="text" id="website" name="website" value=""><br><br>
+            <label for="income-cutoff">Income Cutoff:</label>
+            $<input type="text" id="income-cutoff" name="income-cutoff" value=""><br>
+
+            <h3>Intake Hours</h3>
+            <label for="intake-monday">Monday:</label>
+            <input type="text" id="intake-monday-start" name="intake-monday-start" value="8:00am">
+            <input type="text" id="intake-monday-end" name="intake-monday-end" value="6:00pm"><br>
+            <label for="intake-tuesday">Tuesday:</label>
+            <input type="text" id="intake-tuesday-start" name="intake-tuesday-start" value="8:00am">
+            <input type="text" id="intake-tuesday-end" name="intake-tuesday-end" value="6:00pm"><br>
+            <label for="intake-wednesday">Wednesday:</label>
+            <input type="text" id="intake-wednesday-start" name="intake-wednesday-start" value="8:00am">
+            <input type="text" id="intake-wednesday-end" name="intake-wednesday-end" value="6:00pm"><br>
+            <label for="intake-thursday">Thursday:</label>
+            <input type="text" id="intake-thursday-start" name="intake-thursday-start" value="8:00am">
+            <input type="text" id="intake-thursday-end" name="intake-thursday-end" value="6:00pm"><br>
+            <label for="intake-friday">Friday:</label>
+            <input type="text" id="intake-friday-start" name="intake-friday-start" value="8:00am">
+            <input type="text" id="intake-friday-end" name="intake-friday-end" value="6:00pm"><br>
+            <label for="intake-saturday">Saturday:</label>
+            <input type="text" id="intake-saturday-start" name="intake-saturday-start" value="8:00am">
+            <input type="text" id="intake-saturday-end" name="intake-saturday-end" value="6:00pm"><br>
+            <label for="intake-sunday">Sunday:</label>
+            <input type="text" id="intake-sunday-start" name="intake-sunday-start" value="8:00am">
+            <input type="text" id="intake-sunday-end" name="intake-sunday-end" value="6:00pm"><br>
+
+            <h3>Immigration Services Provided</h3>
+            <label for="immigration-general">General:</label>
+            <input type="checkbox" id="immigration-general" name="immigration-general" value=""><br>
+            <label for="immigration-crime-victims-trafficking">Crime Victims / Trafficking:</label>
+            <input type="checkbox" id="immigration-crime-victims-trafficking" name="immigration-crime-victims-trafficking" value=""><br>
+            <label for="immigration-asylum">Asylum:</label>
+            <input type="checkbox" id="immigration-asylum" name="immigration-asylum" value=""><br>
+            <label for="immigration-citizenship">Citizenship:</label>
+            <input type="checkbox" id="immigration-citizenship" name="immigration-citizenship" value=""><br>
+            <label for="immigration-detained-immigrants">Detained Immigrants:</label>
+            <input type="checkbox" id="immigration-detained-immigrants" name="immigration-detained-immigrants" value=""><br>
+            <label for="immigration-unaccompanied-children">Unaccompanied Children:</label>
+            <input type="checkbox" id="immigration-unaccompanied-children" name="immigration-unaccompanied-children" value=""><br>
+
+            <h3>Civil Legal Services Provided</h3>
+            <label for="civil-family-law">Family Law:</label>
+            <input type="checkbox" id="civil-family-law" name="civil-family-law" value=""><br>
+            <label for="civil-landlord-tenant">Landlord-Tenant:</label>
+            <input type="checkbox" id="civil-landlord-tenant" name="civil-landlord-tenant" value=""><br>
+            <label for="civil-public-benefits">Public Benefits:</label>
+            <input type="checkbox" id="civil-public-benefits" name="civil-public-benefits" value=""><br>
+            <label for="civil-consumer">Consumer:</label>
+            <input type="checkbox" id="civil-consumer" name="civil-consumer" value=""><br>
+            <label for="civil-disability">Disability:</label>
+            <input type="checkbox" id="civil-disability" name="civil-disability" value=""><br>
+            <label for="civil-education">Education:</label>
+            <input type="checkbox" id="civil-education" name="civil-education" value=""><br>
+            <label for="civil-discipline">Discipline:</label>
+            <input type="checkbox" id="civil-discipline" name="civil-discipline" value=""><br>
+            <label for="civil-health">Health:</label>
+            <input type="checkbox" id="civil-health" name="civil-health" value=""><br>
+            <label for="civil-wills">Wills:</label>
+            <input type="checkbox" id="civil-wills" name="civil-wills" value=""><br>
+            <label for="civil-probate-estates">Probate & Estates:</label>
+            <input type="checkbox" id="civil-probate-estates" name="civil-probate-estates" value=""><br>
+            <label for="civil-small-business">Small Business:</label>
+            <input type="checkbox" id="civil-small-business" name="civil-small-business" value=""><br>
+            <label for="civil-criminal-expungement">Criminal Expungement:</label>
+            <input type="checkbox" id="civil-criminal-expungement" name="civil-criminal-expungement" value=""><br>
+
+            <h3>Crime Victims Services Provided</h3>
+            <label for="crime-victims-rights">Crime Victim Rights:</label>
+            <input type="checkbox" id="crime-victims-rights" name="crime-victims-rights" value=""><br>
+            <label for="crime-victims-domestic-violence">Domestic Violence:</label>
+            <input type="checkbox" id="crime-victims-domestic-violence" name="crime-victims-domestic-violence" value=""><br>
+            <label for="crime-victims-sexual-assult">Sexual Assult:</label>
+            <input type="checkbox" id="crime-victims-sexual-assult" name="crime-victims-sexual-assult" value=""><br>
+            <label for="crime-victims-protective-orders">Protective Orders:</label>
+            <input type="checkbox" id="crime-victims-protective-orders" name="crime-victims-protective-orders" value=""><br>
+            <label for="crime-victims-family-law">Family Law:</label>
+            <input type="checkbox" id="crime-victims-family-law" name="crime-victims-family-law" value=""><br>
+            <label for="crime-victims-dating-violence">Dating Violence:</label>
+            <input type="checkbox" id="crime-victims-dating-violence" name="crime-victims-dating-violence" value=""><br>
+            <label for="crime-victims-administrative">Administrative:</label>
+            <input type="checkbox" id="crime-victims-administrative" name="crime-victims-administrative" value=""><br>
+
+            <h3>Civil Rights & Discrimination Services Provided</h3>
+            <label for="civil-rights-discrimination-emplyoment">Employment:</label>
+            <input type="checkbox" id="civil-rights-discrimination-emplyoment" name="civil-rights-discrimination-emplyoment" value=""><br>
+            <label for="civil-rights-discrimination-wage-theft">Wage Theft:</label>
+            <input type="checkbox" id="civil-rights-discrimination-wage-theft" name="civil-rights-discrimination-wage-theft" value=""><br>
+            <label for="civil-rights-discrimination-criminal-expungement">Criminal Expungement:</label>
+            <input type="checkbox" id="civil-rights-discrimination-criminal-expungement" name="civil-rights-discrimination-criminal-expungement" value=""><br>
+            <label for="civil-rights-discrimination-family-sick-leave">Family and Sick Leave:</label>
+            <input type="checkbox" id="civil-rights-discrimination-family-sick-leave" name="civil-rights-discrimination-family-sick-leave" value=""><br>
+            <label for="civil-rights-discrimination-pregnancy-family">Pregnancy / Family:</label>
+            <input type="checkbox" id="civil-rights-discrimination-pregnancy-family" name="civil-rights-discrimination-pregnancy-family" value=""><br>
+            <label for="civil-rights-discrimination-civil-rights-liberties">Civil Rights / Liberties:</label>
+            <input type="checkbox" id="civil-rights-discrimination-civil-rights-liberties" name="civil-rights-discrimination-civil-rights-liberties" value=""><br>
+            <label for="civil-rights-discrimination-health">Health:</label>
+            <input type="checkbox" id="civil-rights-discrimination-health" name="civil-rights-discrimination-health" value=""><br>
+
+            <h3>Law School Clinic Services Provided</h3>
+            <label for="law-school-clinics-family-law">Family Law:</label>
+            <input type="checkbox" id="law-school-clinics-family-law" name="law-school-clinics-family-law" value=""><br>
+            <label for="law-school-clinics-landlord-tenant">Landlord-Tenant:</label>
+            <input type="checkbox" id="aw-school-clinics-landlord-tenant" name="aw-school-clinics-landlord-tenant" value=""><br>
+            <label for="law-school-clinics-consumer">Consumer:</label>
+            <input type="checkbox" id="law-school-clinics-consumer" name="law-school-clinics-consumer" value=""><br>
+            <label for="law-school-clinics-public-benefits">Public Benefits:</label>
+            <input type="checkbox" id="law-school-clinics-public-benefits" name="law-school-clinics-public-benefits" value=""><br>
+            <label for="law-school-clinics-criminal-law">Criminal Law:</label>
+            <input type="checkbox" id="law-school-clinics-criminal-law" name="law-school-clinics-criminal-law" value=""><br>
+            <label for="law-school-clinics-wills">Wills:</label>
+            <input type="checkbox" id="law-school-clinics-wills" name="law-school-clinics-wills" value=""><br>
+            <label for="law-school-clinics-veterans">Veterans:</label>
+            <input type="checkbox" id="law-school-clinics-veterans" name="law-school-clinics-veterans" value=""><br>
+            <label for="law-school-clinics-immigration">Immigration:</label>
+            <input type="checkbox" id="law-school-clinics-immigration" name="law-school-clinics-immigration" value=""><br>
+            <label for="law-school-clinics-small-claims">Small Claims:</label>
+            <input type="checkbox" id="law-school-clinics-small-claims" name="law-school-clinics-small-claims" value=""><br>
+            <label for="law-school-clinics-domestic-violence">Domestic Violence:</label>
+            <input type="checkbox" id="law-school-clinics-domestic-violence" name="law-school-clinics-domestic-violence" value=""><br>
+            <label for="law-school-clinics-tax">Tax:</label>
+            <input type="checkbox" id="law-school-clinics-tax" name="law-school-clinics-tax" value=""><br>
+            <label for="law-school-clinics-criminal-expungement">Criminal Expungement:</label>
+            <input type="checkbox" id="law-school-clinics-criminal-expungement" name="law-school-clinics-criminal-expungement" value=""><br>
+            <label for="law-school-clinics-juvenile-justice">Juvenile Justice:</label>
+            <input type="checkbox" id="law-school-clinics-juvenile-justice" name="law-school-clinics-juvenile-justice" value=""><br>
+            <label for="law-school-clinics-employment">Employment:</label>
+            <input type="checkbox" id="law-school-clinics-employment" name="law-school-clinics-employment" value=""><br>
+            <label for="law-school-clinics-small-business-non-profit">Small Business / Non-Profit:</label>
+            <input type="checkbox" id="law-school-clinics-small-business-non-profit" name="law-school-clinics-small-business-non-profit" value=""><br>
+            <label for="law-school-clinics-special-education">Special Education:</label>
+            <input type="checkbox" id="law-school-clinics-special-education" name="law-school-clinics-special-education" value=""><br>
+            <label for="law-school-clinics-disability">Disability:</label>
+            <input type="checkbox" id="law-school-clinics-disability" name="law-school-clinics-disability" value=""><br>
+            <label for="law-school-clinics-health-insurance">Health Insurance:</label>
+            <input type="checkbox" id="law-school-clinics-health-insurance" name="law-school-clinics-health-insurance" value=""><br>
+
+            <br>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+</html>
